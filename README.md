@@ -1,6 +1,6 @@
 # Your Team Information
 
-[Please edit and put a link to your website as instructed in this readme](./Engine/readme.md)
+[Please edit and put a link to your website as instructed in this readme](./PSET/Engine/readme.md)
 
 ## Team
 

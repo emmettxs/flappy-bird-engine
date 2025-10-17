@@ -4,7 +4,11 @@
 
 ## Project Milestones
 
-This project consists of [01_alpha_deliverable](./01_alpha_deliverable), [02_beta_deliverable](./02_beta_deliverable), and [03_final_deliverable](./03_final_deliverable)
+This project consists of the following stages:
+- [00_project_and_planning](./00_project_and_planning)
+- [01_alpha_deliverable](./01_alpha_deliverable)
+- [02_beta_deliverable](./02_beta_deliverable)
+- [03_final_deliverable](./03_final_deliverable)
 
 # Alpha (10% of final project grade)
 
@@ -16,11 +20,11 @@ This project consists of [01_alpha_deliverable](./01_alpha_deliverable), [02_bet
     </tr>	  
     <tr>
       <td>5% (Prototype)</td>
-      <td align="left">Do you have a minimum game project developed?</td>
+      <td align="left"><ul><li>Did you start your project?</li><li>We will grade this by checking that you have at least one source file commit by the scheduled date on the calendar.</li></ul></td>
     </tr>
     <tr>
       <td>5% (Progress Evaluation)</td>
-      <td align="left">Did you fill out a milestone evaluation?</td>
+      <td align="left">Did you fill out a milestone evaluation (which will be one of your in-class activities)?</td>
     </tr> 	  
   </tbody>
 </table>
@@ -34,7 +38,7 @@ This project consists of [01_alpha_deliverable](./01_alpha_deliverable), [02_bet
       <th align="center">Description</th>
     </tr>	  
     <tr>
-      <td>10%% (30 second video)</td>
+      <td>10% (30 second video)</td>
       <td align="left">Did you submit a 30 second video that showed both your editor(5%) and your game(5%) in a runnable state? It doesn't have to be complete, but I should see you briefly show your editor, and then your game loading some data generated from your editor and loaded in your engine.</td>
     </tr>
   </tbody>
@@ -50,16 +54,29 @@ This project consists of [01_alpha_deliverable](./01_alpha_deliverable), [02_bet
       <th align="center">Description</th>
     </tr>	  
     <tr>
-      <td>25% (Engineering/Design Patterns)</td>
+      <td>20% (Engineering/Design Patterns)</td>
       <td align="left">On the polish of your final project (did it work as intended, were there bugs, did I have to struggle to get your tool running, was your solution well engineered, were there patterns used, etc.)</td>
     </tr>
     <tr>
       <td>20%  (Requirements)</td>
-      <td align="left">Did you complete all of the requirements from part?</td>
+      <td align="left">Did you complete all of the requirements regarding having a game built and an editor to help build your game?</td>
     </tr>
     <tr>
       <td>5%% (Wow Factor)</td>
       <td align="left">On the creativity and overall 'wow' factor of your project. Was there a cool feature or surprise that got me excited about the project? Does this project have potential to be extended in the future? Were there creative additional tools that supported your work. Was there something not covered in class that you were excited about, learned, and implemented anyway? (Document this to bring to my attention if so!)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Points</th>
+      <th align="center">Description</th>
+    </tr>	  
+    <tr>
+      <td>5% (Final Project Presentation)</td>
+      <td align="left">You are expected to have at least one team member (ideally everyone) present the final project on the final presentation day of class.</td>
     </tr>
   </tbody>
 </table>

@@ -26,30 +26,38 @@ The greater gaming industry is getting positive buzz talking about your game dev
 ## Project Requirements and Constraints
 
 1. Your must build the majority of your technology from scratch.
-  - Any 3rd party code (e.g. an image library, networking library, physics library, etc.), must be **first** instructor/ULA/TF approved, and then you should cite your source in the [../readme.md](../readme.md).
-	- 3rd party libraries for a physics engine (e.g. Box2D) are okay if you want to incorporate it into the engine, but you otherwise should do the majority of the work.
+  	- Any 3rd party code (e.g. an image library, networking library, physics library, etc.), must be **first** instructor/ULA/TF approved, and then you should cite your source in the [./../../README.md](./../../README.md).
 2. It is expected/permissable that you reuse some code from previous problem sets.
-3. You cannot build a tech demo with Unity3D, Unreal Engine -- that is not in the spirit of the course, we are building things from scratch (i.e. you cannot change the final project assignment to something else).
+3. You cannot build a tech demo with Unity3D, Unreal Engine
+    - It is not in the spirit of the course (i.e. you cannot change the final project to something else), and I want to give you the opportunity to do a deep technical project as a team.
+    - After you finish this course, you will have the opportunity to take your knowledge and work on engines, mods, etc.
 
-Note--if you have not taken computer graphics, you should not be attempting to learn 3D graphics during this duration -- I am expecting most engines will follow what we have done in this semester and be 2D or pseudo-2D (i.e. perhaps faking 3D perspective, but ultimately be using 2D graphics API). It is highly recommended (and to some extent expected) that most students will work on 2D projects leveraging their previous codebase.
+> Note--if you have not taken computer graphics, you should not be attempting to learn 3D graphics during this duration -- I am expecting most engines will follow what we have done in this semester and be 2D or pseudo-2D (i.e. perhaps faking 3D perspective, but ultimately be using 2D graphics API). It is highly recommended (and to some extent expected) that most students will work on 2D projects leveraging their previous codebase.
 
-## Project Requirements
+## Project High Level Requirements
 
-The **key** components for your project are:
+There are  **three key** components for your project:
 
-1. The Dlang based engine that does the heavy lifting and management of game objects and resources -- this is likely similar to your most recent game and editor PSETS.
-2. An editor or supporting tools for building games
-   - (e.g. A GUI editor that shows your scene and game objects, a GUI-based tile editor, a GUI-based world editor, a sprite animation tool, etc.)
-   - i.e. You should have some 'tooling' that otherwise generates data for your engine. Someone should be able to build or layout scenes for your game using tooling (i.e. your engine should not just be D code, but some tooling supporting the engine).
-4. A game built in your engine (i.e. a classic or original game) with 3 'scenes'.
+1. A Dlang (or C++ is also allowed) based game engine.
+   - The game engine should do the heavy lifting and management of game objects and resources -- this is likely similar to your most recent game and editor PSETS.
+3. A supporting tool/editor for building games that 'generates', 'previews', or somehow assists in the development of games.
+   - i.e. you need to build one tool -- for example:
+		- A GUI editor that shows your scene and game objects
+   		- A GUI-based tile editor
+		- A GUI-based world editor
+   		- A sprite animation tool, etc.
+   - Again, the purpose of the 'tooling' is to otherwise generates (or preview) data for your engine. Someone should be able to build or layout scenes for your game using tooling (i.e. your engine should not just be D code, but some tooling supporting the engine).
+3. A game built in your engine with at least 3 'scenes'
+	- This can be a classic or original game.
+	- It should not be however one of the projects we already built (i.e. no space invaders clones -- expand and do something different)
 
-## Technical Requirements
+## Project Technical Requirements
 
-The following are the technical requirements of your game engine. There is significant freedom in how you achieve them, but I would like you to apply these techniques in your engine.
+The following are the technical requirements of your game engine. There is significant freedom in how you achieve these goals, but you should otherwise be applying these techniques in your engine that we learned throughout the term.
 
 - [ ] Implement a resource manager
-- [ ] Implement a GUI-based editor/environment for assisting building a game (e.g. A tilemap editor, 2D animation preview tool, etc.)
-	- This tool need not be implemented in Dlang, but should otherwise generate data that your Dlang engine can use.
+- [ ] Implement a GUI-based editor/environment for assisting building a game (e.g. A tilemap editor, 2D animation preview tool, web-based level generator, etc.)
+	- This tool need not be implemented in Dlang or C++, but should otherwise generate data that your Dlang engine can use.
 - [ ] Your engine must be data-driven
   - [ ] Scripts of some kind should be loaded for the gameplay logic (e.g. D Scripts, hot reloaded from DLang, using PyD, or perhaps something else)
   - [ ] Other configuration files (e.g. levels, scenes, etc.) should be loaded at run-time.
@@ -71,7 +79,7 @@ The following are the technical requirements of your game engine. There is signi
 
 It **would be wise** to spend some time looking at [past course projects](./past.md) to otherwise get an idea of what your project make look like.
 
-Note; Project requirements have changed over time, but generally speaking the linked previous year projects are good examples of the spirit of what we are making this semester.
+> Note: Project requirements have changed over time, but generally speaking the linked previous year projects are good examples of the spirit of what we are making this semester and projects that scored very well.
 
 ## Gameplan
 
@@ -99,16 +107,3 @@ You may also want to discuss how you'd like to keep in touch (e.g. E-mail, disco
 7. *week 7 goals, and who will work on what*
 8. *week 8 goals, and who will work on what*
 
-## Universal Resources
-
-You will be using SDL to build this project and the same libraries that we have been using during the semester.
-
-| D Programming Related Links                         | Description                       |
-| --------------------------------------------------  | --------------------------------- |
-| [My D Youtube Series](https://www.youtube.com/playlist?list=PLvv0ScY6vfd9Fso-3cB4CGnSlW0E4btJV) | My video series playlist for learning D Lang. |
-| [DLang Phobos Standard Library Index](https://dlang.org/phobos/index.html)  | The Phobos Runtime Library (i.e. standard library of code.)
-| [D Language Tour](https://tour.dlang.org/)           | Nice introduction to the D Language with samples you can run in the browser. |
-| [Programming in D](https://ddili.org/ders/d.en/)     | Freely available D language programming book |
-| [My SDL 3 D Playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-5hY-sFyttTjfuUxG5c7OA) | My SDL 3 Playlist in D | 
-| [My SDL 3 C++ Playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-RZSmGbLkZvkgec6lJ0BfX) | My SDL 3 Playlist in C++ (Also relevant for this course) |
-| [My SDL 2 C++ Playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0)     | My SDL 2 Playlist (Older but some different lessons) |
