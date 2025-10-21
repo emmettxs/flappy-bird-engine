@@ -10,6 +10,11 @@ This project consists of the following stages:
 - [02_beta_deliverable](./02_beta_deliverable)
 - [03_final_deliverable](./03_final_deliverable)
 
+**Rule: Everyone on your team earns the same grade for all parts of the project.**
+
+For Yale graduate students who are taking the course at the 5000 level, the expectation is that your project will have more.
+- Grad level students will use game engine to make a game with at least '4' scenes (instead of 3).
+
 # Alpha (10% of final project grade)
 
 <table>
@@ -59,7 +64,7 @@ This project consists of the following stages:
     </tr>
     <tr>
       <td>20%  (Requirements)</td>
-      <td align="left">Did you complete all of the requirements regarding having a game built and an editor to help build your game?</td>
+      <td align="left">Did you complete all of the requirements regarding having: a game engine, a game built, and an editor to help build your game?</td>
     </tr>
     <tr>
       <td>5%% (Wow Factor)</td>
@@ -122,8 +127,6 @@ This project consists of the following stages:
     </tr> 
   </tbody>
 </table>
-
-**Rule: Everyone on your team earns the same grade for all parts of the project.**
 
 ## Note on teammate evaluations (The exception to the rule above)
 
