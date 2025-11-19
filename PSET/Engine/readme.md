@@ -1,7 +1,8 @@
 
 ## Game/Engine Publicity
 
-**Project Website**: *please edit the project website with a link here and also at the root directory of the READMD.md*
+**Project Website**: *This Google Doc will have a link to my 30-second progress video
+https://docs.google.com/document/d/1JHNdq4iqIaUwGlGe9AxaT6y5l3xWqu_klVggqqmeyew/edit?usp=sharing*
 
 ## Compilation Instructions
 
@@ -9,7 +10,7 @@
 
 ## Add any additional notes here
 
-*your additional notes, or things ULA/TF/Instructors should know*
+*I am using SDL3*
 
 ## Project Hieararchy
 

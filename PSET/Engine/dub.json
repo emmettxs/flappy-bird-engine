@@ -1,19 +1,10 @@
 {
-    "name": "flappy-bird",
-    "description": "Flappy Bird game - Alpha Prototype",
-    "authors": ["Emmett"],
-    "copyright": "Copyright 2025, Emmett",
-    "license": "proprietary",
-    "version": "0.0.1",
-    "targetPath": "bin/",
-    "mainSourceFile": "src/main.d",
-    "sourceFiles": ["src/main.d"],
-    "buildTypes": {
-        "debug": {
-            "buildOptions": ["debugInfo"]
-        },
-        "release": {
-            "buildOptions": ["releaseMode", "optimize"]
-        }
-    }
+  "name": "flappy-bird-engine",
+  "description": "a copy of the flappy-bird game",
+  "authors": ["Emmett Seto"],
+  "copyright": "Copyright © 2025, Emmett Seto",
+  "license": "proprietary",
+  "dependencies": {
+    "bindbc-sdl": "~>1.4"
+  }
 }
