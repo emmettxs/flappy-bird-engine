@@ -1,7 +1,7 @@
-module engine.game;
-import engine.renderer;
-import engine.input;
-import engine.resource_manager;
+module main_game;
+import renderer;
+import input;
+import resource_manager;
 import std.stdio;
 import core.thread;
 
@@ -24,22 +24,18 @@ class Game {
         input = new InputManager();
         resourceManager = ResourceManager.Get();
         resourceManager.SetRenderer(renderer.getSDLRenderer());
-        writeln("Game initialized with resource manager");
     }
 
     void setScene(Scene scene) {
         currentScene = scene;
     }
-
     void run() {
         import core.time;
         import std.datetime.stopwatch;
 
         StopWatch watch;
-
         while (isRunning && !input.getQuitSignal()) {
             watch.start();
-
             input.processInput();
             if (currentScene !is null) {
                 currentScene.update(frameTime);

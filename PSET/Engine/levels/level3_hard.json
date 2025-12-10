@@ -1,0 +1,462 @@
+{
+  "type": "Level",
+  "name": "Level 3 - Hard Mode",
+  "width": 800,
+  "height": 600,
+  "gravity": 1000.0,
+  "bgR": 100,
+  "bgG": 150,
+  "bgB": 200,
+  "gameObjects": [
+    {
+      "type": "GameObject",
+      "name": "Ground",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 0.0,
+          "y": 550.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 800,
+          "height": 50,
+          "r": 80,
+          "g": 60,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 800,
+          "height": 50,
+          "isTrigger": false,
+          "tag": "ground"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Ceiling",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 0.0,
+          "y": 0.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 800,
+          "height": 30,
+          "r": 80,
+          "g": 80,
+          "b": 80
+        },
+        {
+          "type": "Collider",
+          "width": 800,
+          "height": 30,
+          "isTrigger": false,
+          "tag": "ceiling"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe1_Top",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 350.0,
+          "y": 30.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 300,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 300,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe1_Bottom",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 350.0,
+          "y": 450.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 100,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 100,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe2_Top",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 550.0,
+          "y": 30.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 220,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 220,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe2_Bottom",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 550.0,
+          "y": 380.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 170,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 170,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe3_Top",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 750.0,
+          "y": 30.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 280,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 280,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe3_Bottom",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 750.0,
+          "y": 430.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 120,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 120,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe4_Top",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 950.0,
+          "y": 30.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 250,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 250,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe4_Bottom",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 950.0,
+          "y": 400.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 150,
+          "r": 40,
+          "g": 100,
+          "b": 40
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 150,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Wall_Left",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 200.0,
+          "y": 200.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 30,
+          "height": 200,
+          "r": 105,
+          "g": 105,
+          "b": 105
+        },
+        {
+          "type": "Collider",
+          "width": 30,
+          "height": 200,
+          "isTrigger": false,
+          "tag": "wall"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "PowerUp_invincibility_0",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 300.0,
+          "y": 200.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 20,
+          "height": 20,
+          "r": 255,
+          "g": 255,
+          "b": 0
+        },
+        {
+          "type": "Collider",
+          "width": 20,
+          "height": 20,
+          "isTrigger": true,
+          "tag": "powerup_invincibility"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "PowerUp_slowtime_1",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 500.0,
+          "y": 250.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 20,
+          "height": 20,
+          "r": 255,
+          "g": 255,
+          "b": 0
+        },
+        {
+          "type": "Collider",
+          "width": 20,
+          "height": 20,
+          "isTrigger": true,
+          "tag": "powerup_slowtime"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "PowerUp_shrink_2",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 650.0,
+          "y": 280.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 20,
+          "height": 20,
+          "r": 255,
+          "g": 255,
+          "b": 0
+        },
+        {
+          "type": "Collider",
+          "width": 20,
+          "height": 20,
+          "isTrigger": true,
+          "tag": "powerup_shrink"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "PowerUp_score_3",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 750.0,
+          "y": 320.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 20,
+          "height": 20,
+          "r": 255,
+          "g": 255,
+          "b": 0
+        },
+        {
+          "type": "Collider",
+          "width": 20,
+          "height": 20,
+          "isTrigger": true,
+          "tag": "powerup_score"
+        }
+      ]
+    }
+  ]
+}

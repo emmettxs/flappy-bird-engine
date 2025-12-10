@@ -1,0 +1,132 @@
+{
+  "type": "Level",
+  "name": "My Level",
+  "width": 800,
+  "height": 600,
+  "gravity": 800.0,
+  "bgR": 135,
+  "bgG": 206,
+  "bgB": 235,
+  "gameObjects": [
+    {
+      "type": "GameObject",
+      "name": "Ground",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 0.0,
+          "y": 550.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 800,
+          "height": 50,
+          "r": 139,
+          "g": 69,
+          "b": 19
+        },
+        {
+          "type": "Collider",
+          "width": 800,
+          "height": 50,
+          "isTrigger": false,
+          "tag": "ground"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe0_Top",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 519.0,
+          "y": 0.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 94,
+          "r": 34,
+          "g": 139,
+          "b": 34
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 94,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "Pipe0_Bottom",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 519.0,
+          "y": 244.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 60,
+          "height": 306,
+          "r": 34,
+          "g": 139,
+          "b": 34
+        },
+        {
+          "type": "Collider",
+          "width": 60,
+          "height": 306,
+          "isTrigger": false,
+          "tag": "pipe"
+        }
+      ]
+    },
+    {
+      "type": "GameObject",
+      "name": "PowerUp_slowtime_0",
+      "active": true,
+      "components": [
+        {
+          "type": "Transform",
+          "x": 271.0,
+          "y": 185.0,
+          "rotation": 0.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0
+        },
+        {
+          "type": "Sprite",
+          "width": 20,
+          "height": 20,
+          "r": 255,
+          "g": 255,
+          "b": 0
+        },
+        {
+          "type": "Collider",
+          "width": 20,
+          "height": 20,
+          "isTrigger": true,
+          "tag": "powerup_slowtime"
+        }
+      ]
+    }
+  ]
+}

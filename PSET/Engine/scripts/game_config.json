@@ -1,0 +1,32 @@
+{
+  "type": "GameScript",
+  "name": "game_config",
+  "variables": {
+    "bird_jump_power": -300.0,
+    "bird_gravity": 800.0,
+    "pipe_speed": -200.0,
+    "pipe_spawn_rate": 2.5,
+    "score_multiplier": 1.0
+  },
+  "flags": {
+    "hard_mode": false,
+    "infinite_lives": false,
+    "show_hitboxes": false
+  },
+  "commands": [
+    {
+      "action": "modify",
+      "target": "bird",
+      "parameter": "jump_power",
+      "value": -300.0,
+      "stringValue": ""
+    },
+    {
+      "action": "modify",
+      "target": "game",
+      "parameter": "gravity",
+      "value": 800.0,
+      "stringValue": ""
+    }
+  ]
+}

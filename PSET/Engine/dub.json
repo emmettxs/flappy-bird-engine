@@ -1,10 +1,17 @@
 {
   "name": "flappy-bird-engine",
-  "description": "a copy of the flappy-bird game",
+  "description": "a simple game of lappy bird",
   "authors": ["Emmett Seto"],
-  "copyright": "Copyright © 2025, Emmett Seto",
+  "copyright": "Copyright Emmett Seto",
   "license": "proprietary",
+  "targetType": "executable",
+  "targetPath": "bin",
+  "sourcePaths": ["src"],
+  "importPaths": ["src"],
+  "mainSourceFile": "src/main.d",
   "dependencies": {
     "bindbc-sdl": "~>1.4"
-  }
+  },
+  "versions": ["SDL_3"],
+  "libs": ["SDL3"]
 }

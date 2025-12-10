@@ -1,4 +1,4 @@
-module engine.resource_manager;
+module resource_manager;
 
 import std.stdio;
 import std.string;
@@ -13,7 +13,6 @@ class ResourceManager {
     private SDL_Renderer* renderer;
 
     private this() {
-        writeln("ResourceManager initialized (Singleton)");
     }
 
     static ResourceManager Get() {
@@ -29,7 +28,6 @@ class ResourceManager {
         if (path in textures) {
             return textures[path];
         }
-
         SDL_Surface* surface = SDL_LoadBMP(path.toStringz);
         if (surface is null) {
             return null;
@@ -49,7 +47,6 @@ class ResourceManager {
             return textures[name];}
         return null;
     }
-
     void LoadFromJSON(string jsonPath) {
         if (!exists(jsonPath)) {
             writeln("JSON file not found: ", jsonPath);
@@ -63,13 +60,12 @@ class ResourceManager {
                     string name = tex["name"].str;
                     string path = tex["path"].str;
                     LoadTexture(path);
-                    writeln("Loaded texture from JSON: ", name, " (", path, ")");}
+                }
             }
         } catch (Exception e) {
             writeln("Error loading JSON resources: ", e.msg);
         }
     }
-
     bool LoadGeneric(T)(string name, T data) {
         if (name in genericResources) {
             writeln("Generic resource already loaded: ", name);
@@ -89,10 +85,8 @@ class ResourceManager {
     bool HasTexture(string name) {
         return (name in textures) !is null;
     }
-
     bool HasGeneric(string name) {
         return (name in genericResources) !is null;}
-
     void UnloadTexture(string name) {
         if (name in textures) {
             SDL_DestroyTexture(textures[name]);

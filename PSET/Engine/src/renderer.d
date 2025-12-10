@@ -1,4 +1,4 @@
-module engine.renderer;
+module renderer;
 
 import bindbc.sdl;
 import std.stdio;
@@ -30,10 +30,8 @@ class Renderer {
             writeln("SDL initialization failed: ", SDL_GetError().fromStringz);
             throw new Exception("SDL initialization failed");}
         window = SDL_CreateWindow(
-            "Flappy Bird",
-            SDL_WINDOWPOS_CENTERED,
-            SDL_WINDOWPOS_CENTERED,
-            width,
+            "Flappy Bird", SDL_WINDOWPOS_CENTERED,
+            SDL_WINDOWPOS_CENTERED,width,
             height,
             SDL_WINDOW_SHOWN
         );
@@ -41,14 +39,12 @@ class Renderer {
         if (window is null) {
             writeln("Window creation failed: ", SDL_GetError().fromStringz);
             throw new Exception("Window creation failed");}
-
         renderer = SDL_CreateRenderer(window, -1,
             SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
         if (renderer is null) {
             writeln("Renderer creation failed: ", SDL_GetError().fromStringz);
             throw new Exception("Renderer creation failed");}
-
         initialized = true;
     }
 
@@ -71,6 +67,13 @@ class Renderer {
     void drawRect(int x, int y, int width, int height) {
         drawRect(x, y, width, height, 255, 255, 255);
     }
+
+    void drawTexture(SDL_Texture* texture, int x, int y, int width, int height) {
+        if (!initialized || texture is null) return;
+        SDL_Rect destRect = SDL_Rect(x, y, width, height);
+        SDL_RenderCopy(renderer, texture, null, &destRect);
+    }
+
     int getWidth() {
         return windowWidth;
     }
