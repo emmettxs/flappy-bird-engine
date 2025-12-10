@@ -8,10 +8,10 @@ from tkinter import ttk, messagebox, filedialog, colorchooser
 import json
 import os
 
-class SimpleLevelEditor:
+class Editor:
     def __init__(self, root):
         self.root = root
-        self.root.title("Flappy Bird Level Editor - Simple")
+        self.root.title("Flappy Bird Level Editor")
         self.root.geometry("1000x700")
 
         # level settings
@@ -32,19 +32,16 @@ class SimpleLevelEditor:
         self.powerups = []
         self.selected_powerup_type = None 
 
-        # Background color (RGB)
         self.bg_r = 135
         self.bg_g = 206
         self.bg_b = 235
         self.setup_ui()
 
     def setup_ui(self):
-        # top controls
         control_frame = tk.Frame(self.root, bg='lightgray', height=150)
         control_frame.pack(fill=tk.X, padx=5, pady=5)
         control_frame.pack_propagate(False)
 
-        # Row 1
         row1 = tk.Frame(control_frame, bg='lightgray')
         row1.pack(pady=5)
 
@@ -76,15 +73,12 @@ class SimpleLevelEditor:
         self.gravity_var.trace('w', lambda *args: self.update_settings())
         self.gravity_spin.pack(side=tk.LEFT, padx=5)
 
-        # row 2 - buttons
         row2 = tk.Frame(control_frame, bg='lightgray')
         row2.pack(pady=5)
         tk.Button(row2, text="Save Level", command=self.save_level, bg='green', fg='black', width=12).pack(side=tk.LEFT, padx=5)
         tk.Button(row2, text="Load Level", command=self.load_level,
                  bg='blue', fg='black', width=12).pack(side=tk.LEFT, padx=5)
         tk.Button(row2, text="Clear All", command=self.clear_all, bg='red', fg='black', width=12).pack(side=tk.LEFT, padx=5)
-
-        # Power-ups Row
         powerup_frame = tk.Frame(control_frame, bg='lightgray')
         powerup_frame.pack(pady=5)
 
@@ -544,7 +538,7 @@ class SimpleLevelEditor:
 
 def main():
     root = tk.Tk()
-    app = SimpleLevelEditor(root)
+    app = Editor(root)
     root.mainloop()
 
 if __name__ == "__main__":
